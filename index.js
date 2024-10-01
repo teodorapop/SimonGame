@@ -22,6 +22,13 @@ function nextSequence() {
     $("h1").text("Level " + level);
     level++;
 }
+// Detect touch for mobile
+$("h1").on("click touchstart", function() {
+    if (a === 0) {
+        nextSequence();
+        a++;
+    }
+});
 
 $(document).keypress(function() {
     if (a === 0) {
