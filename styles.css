@@ -1,21 +1,26 @@
-body{
+body {
     background-color: #011F3F;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
 }
 
-#level-title{
-    font-family: 'Press Start 2P', cursive;
+#level-title {
     color: #FEF2BF;
     font-size: 3rem;
     margin: 5%;
 }
-.container{
-    display: block;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     width: 50%;
 }
 
-.btn{
+.btn {
     margin: 20px;
     display: inline-block;
     height: 200px;
@@ -24,11 +29,11 @@ body{
     border-radius: 10%;
 }
 
-#green{
+#green {
     background-color: green;
 }
 
-#red{
+#red {
     background-color: red;
 }
 
@@ -45,23 +50,42 @@ body{
     opacity: 0.8;
 }
 
-
-
 .pressed {
     box-shadow: 0 0 20px white;
     background-color: grey;
 }
 
-/* Phone*/
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
     #level-title {
         font-size: 2rem;
+        margin: 10%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .btn {
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #level-title {
+        font-size: 1rem;
         margin: 15%;
+    }
+
+    .container {
+        width: 100%;
     }
 
     .btn {
         height: 100px;
-        width: 100px;
+        width: 45%;
         margin: 10px;
     }
 }
