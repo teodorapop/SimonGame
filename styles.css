@@ -21,12 +21,13 @@ body {
 }
 
 .btn {
-    margin: 20px;
+    margin: 10px;
     display: inline-block;
-    height: 200px;
-    width: 200px;
+    width: 45%;
+    aspect-ratio: 1 / 1;
     border: 10px solid black;
     border-radius: 10%;
+    box-sizing: border-box;
 }
 
 #green {
@@ -55,7 +56,6 @@ body {
     background-color: grey;
 }
 
-
 @media (max-width: 768px) {
     #level-title {
         font-size: 2rem;
@@ -63,17 +63,18 @@ body {
     }
 
     .container {
-        width: 100%;
+        width: 90%;
     }
 
     .btn {
-        height: 150px;
-        width: 150px;
-        margin: 15px;
+        width: 45%;
+        margin: 10px;
+        aspect-ratio: 1 / 1;
     }
 }
 
-@media (max-width: 280px) {
+
+@media (max-width: 480px) {
     #level-title {
         font-size: 1rem;
         margin: 15%;
@@ -84,8 +85,8 @@ body {
     }
 
     .btn {
-        height: 100px;
         width: 45%;
         margin: 10px;
+        aspect-ratio: 1 / 1;
     }
 }
